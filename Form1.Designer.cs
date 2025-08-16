@@ -48,8 +48,9 @@
             // 
             pictureBox1.Image = Properties.Resources.인트로_초반자막;
             pictureBox1.Location = new Point(0, 0);
+            pictureBox1.Margin = new Padding(2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(782, 405);
+            pictureBox1.Size = new Size(768, 465);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
@@ -58,9 +59,10 @@
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(0, -1);
+            pictureBox2.Location = new Point(-3, 0);
+            pictureBox2.Margin = new Padding(2);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(782, 405);
+            pictureBox2.Size = new Size(771, 467);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 1;
             pictureBox2.TabStop = false;
@@ -68,25 +70,31 @@
             // panel1
             // 
             panel1.BackColor = Color.Transparent;
+            panel1.BackgroundImageLayout = ImageLayout.Stretch;
             panel1.Controls.Add(pictureBox3);
             panel1.Controls.Add(label1);
             panel1.Controls.Add(Box);
             panel1.Controls.Add(character);
-            panel1.Location = new Point(0, 0);
+            panel1.Location = new Point(-3, 0);
+            panel1.Margin = new Padding(2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(782, 405);
+            panel1.Size = new Size(771, 501);
             panel1.TabIndex = 2;
             panel1.Click += panel1_Click;
             // 
             // pictureBox3
             // 
+            pictureBox3.BackgroundImage = Properties.Resources.인트로_2_탐정등장;
+            pictureBox3.BackgroundImageLayout = ImageLayout.Stretch;
             pictureBox3.Image = Properties.Resources.인트로_2_탐정등장;
             pictureBox3.Location = new Point(0, 0);
+            pictureBox3.Margin = new Padding(2);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(782, 406);
+            pictureBox3.Size = new Size(773, 472);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox3.TabIndex = 3;
             pictureBox3.TabStop = false;
+            pictureBox3.Click += pictureBox3_Click;
             // 
             // label1
             // 
@@ -94,41 +102,45 @@
             label1.BackColor = Color.DarkOrange;
             label1.Font = new Font("한컴 말랑말랑 Bold", 10.1999989F, FontStyle.Bold, GraphicsUnit.Point, 129);
             label1.Image = Properties.Resources.대사박스4;
-            label1.Location = new Point(191, 311);
+            label1.Location = new Point(296, 361);
+            label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(175, 22);
+            label1.Size = new Size(146, 19);
             label1.TabIndex = 2;
             label1.Text = ".... 여기는 우리 집인데....\r\n";
+            label1.Click += label1_Click;
             // 
             // Box
             // 
             Box.Image = Properties.Resources.대사박스4;
-            Box.Location = new Point(163, 283);
+            Box.Location = new Point(253, 306);
+            Box.Margin = new Padding(2);
             Box.Name = "Box";
-            Box.Size = new Size(486, 97);
+            Box.Size = new Size(422, 144);
             Box.SizeMode = PictureBoxSizeMode.StretchImage;
             Box.TabIndex = 1;
             Box.TabStop = false;
+            Box.Click += Box_Click;
             // 
             // character
             // 
             character.Image = Properties.Resources.한여주_혼란스러운_Photoroom;
-            character.Location = new Point(30, 240);
+            character.Location = new Point(80, 273);
+            character.Margin = new Padding(2);
             character.Name = "character";
-            character.Size = new Size(142, 164);
+            character.Size = new Size(154, 194);
             character.SizeMode = PictureBoxSizeMode.Zoom;
             character.TabIndex = 0;
             character.TabStop = false;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(9F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(782, 403);
+            ClientSize = new Size(764, 461);
             Controls.Add(panel1);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
-            Margin = new Padding(4);
             Name = "Form1";
             Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
