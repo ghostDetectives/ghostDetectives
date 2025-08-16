@@ -50,7 +50,7 @@
             pictureBox1.Location = new Point(0, 0);
             pictureBox1.Margin = new Padding(2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(768, 465);
+            pictureBox1.Size = new Size(727, 465);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
@@ -59,10 +59,10 @@
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(-3, 0);
+            pictureBox2.Location = new Point(-6, 0);
             pictureBox2.Margin = new Padding(2);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(771, 467);
+            pictureBox2.Size = new Size(733, 467);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 1;
             pictureBox2.TabStop = false;
@@ -75,10 +75,10 @@
             panel1.Controls.Add(label1);
             panel1.Controls.Add(Box);
             panel1.Controls.Add(character);
-            panel1.Location = new Point(-3, 0);
+            panel1.Location = new Point(-3, -3);
             panel1.Margin = new Padding(2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(771, 501);
+            panel1.Size = new Size(731, 465);
             panel1.TabIndex = 2;
             panel1.Click += panel1_Click;
             // 
@@ -87,10 +87,10 @@
             pictureBox3.BackgroundImage = Properties.Resources.인트로_2_탐정등장;
             pictureBox3.BackgroundImageLayout = ImageLayout.Stretch;
             pictureBox3.Image = Properties.Resources.인트로_2_탐정등장;
-            pictureBox3.Location = new Point(0, 0);
+            pictureBox3.Location = new Point(-1, -5);
             pictureBox3.Margin = new Padding(2);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(773, 472);
+            pictureBox3.Size = new Size(730, 472);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox3.TabIndex = 3;
             pictureBox3.TabStop = false;
@@ -137,7 +137,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(764, 461);
+            ClientSize = new Size(723, 461);
             Controls.Add(panel1);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
