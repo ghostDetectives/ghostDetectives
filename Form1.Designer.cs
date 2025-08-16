@@ -30,12 +30,13 @@
         {
             button1 = new Button();
             button2 = new Button();
+            button3 = new Button();
             SuspendLayout();
             // 
             // button1
             // 
             button1.Location = new Point(418, 231);
-            button1.Margin = new Padding(4, 4, 4, 4);
+            button1.Margin = new Padding(4);
             button1.Name = "button1";
             button1.Size = new Size(310, 256);
             button1.TabIndex = 0;
@@ -51,14 +52,25 @@
             button2.Text = "button2";
             button2.UseVisualStyleBackColor = true;
             // 
+            // button3
+            // 
+            button3.Location = new Point(654, 231);
+            button3.Margin = new Padding(4);
+            button3.Name = "button3";
+            button3.Size = new Size(310, 256);
+            button3.TabIndex = 2;
+            button3.Text = "button3";
+            button3.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(9F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1029, 600);
+            Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
-            Margin = new Padding(4, 4, 4, 4);
+            Margin = new Padding(4);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
@@ -68,5 +80,6 @@
 
         private Button button1;
         private Button button2;
+        private Button button3;
     }
 }
