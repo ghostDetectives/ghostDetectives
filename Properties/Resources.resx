@@ -130,4 +130,16 @@
   <data name="인트로_2_탐정등장" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\인트로_2_탐정등장.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="인트로_1_문닫혀있는" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\..\..\OneDrive\바탕 화면\새 폴더\인트로\인트로_1_문닫혀있는.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2_탐정_등장" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\..\..\OneDrive\바탕 화면\새 폴더\인트로\2_탐정_등장.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3_탐정_등장" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\..\..\OneDrive\바탕 화면\새 폴더\인트로\3_탐정_등장.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="인트로_탐정_3인칭" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\..\..\OneDrive\바탕 화면\새 폴더\인트로\인트로_탐정_3인칭.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

@@ -63,9 +63,39 @@ namespace ghostDetectives.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
+        internal static System.Drawing.Bitmap _2_탐정_등장 {
+            get {
+                object obj = ResourceManager.GetObject("2_탐정_등장", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap _3_탐정_등장 {
+            get {
+                object obj = ResourceManager.GetObject("3_탐정_등장", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
         internal static System.Drawing.Bitmap 대사박스4 {
             get {
                 object obj = ResourceManager.GetObject("대사박스4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap 인트로_1_문닫혀있는 {
+            get {
+                object obj = ResourceManager.GetObject("인트로_1_문닫혀있는", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -86,6 +116,16 @@ namespace ghostDetectives.Properties {
         internal static System.Drawing.Bitmap 인트로_초반자막 {
             get {
                 object obj = ResourceManager.GetObject("인트로_초반자막", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap 인트로_탐정_3인칭 {
+            get {
+                object obj = ResourceManager.GetObject("인트로_탐정_3인칭", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

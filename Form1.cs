@@ -28,6 +28,7 @@ namespace ghostDetectives
 
         private void pictureBox1_Click(object sender, EventArgs e) // 검은 인트로 클릭 시 여주 등장으로 넘어감
         {
+
             pictureBox1.Visible = false;
             pictureBox2.Visible = true;
             pictureBox3.Visible = false;
@@ -37,13 +38,13 @@ namespace ghostDetectives
         }
 
         int detectiveImageIndex = 0; // 탐정 이미지 순서
-        string[] detectiveImages = new string[]
+        Image[] detectiveImages = new Image[]
         {
-            @"C:\Users\dmlwl\Source\Repos\ghostDetectives\Resources\인트로_1_문닫혀있는.jpg",
-            @"C:\Users\dmlwl\Source\Repos\ghostDetectives\Resources\인트로_2_탐정등장.png",
-            @"C:\Users\dmlwl\Source\Repos\ghostDetectives\Resources\2_탐정_등장.png",
-            @"C:\Users\dmlwl\Source\Repos\ghostDetectives\Resources\3_탐정_등장.png",
-            @"C:\Users\dmlwl\Source\Repos\ghostDetectives\Resources\인트로_5_탐정_3인칭.png"
+            Properties.Resources.인트로_1_문닫혀있는,
+            Properties.Resources.인트로_2_탐정등장,
+            Properties.Resources._2_탐정_등장,
+            Properties.Resources._3_탐정_등장,
+            Properties.Resources.인트로_탐정_3인칭
         };
 
         private void ShowDetective()
@@ -58,8 +59,7 @@ namespace ghostDetectives
             panel1.Visible = false;
             panel1.SendToBack();
 
-
-            pictureBox3.Image = Image.FromFile(detectiveImages[0]);
+            pictureBox3.Image = detectiveImages[0];
 
             // pictureBox3 셋업
             pictureBox3.Parent = this; ;
@@ -102,7 +102,7 @@ namespace ghostDetectives
             }
 
             // 다음 이미지 출력
-            pictureBox3.Image = Image.FromFile(detectiveImages[detectiveImageIndex]);
+            pictureBox3.Image = detectiveImages[detectiveImageIndex];
         }
 
 
