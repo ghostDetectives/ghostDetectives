@@ -183,16 +183,6 @@ namespace ghostDetectives.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        internal static System.Drawing.Bitmap 인트로_탐정_3인칭 {
-            get {
-                object obj = ResourceManager.GetObject("인트로_탐정_3인칭", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
         internal static System.Drawing.Bitmap 인트로_탐정_시체발견_수정 {
             get {
                 object obj = ResourceManager.GetObject("인트로_탐정_시체발견_수정", resourceCulture);

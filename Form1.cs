@@ -160,7 +160,7 @@ namespace ghostDetectives
             Properties.Resources.인트로_2_탐정등장,
             Properties.Resources.인트로_3_탐정등장,
             Properties.Resources.인트로_4_탐정등장,
-            Properties.Resources.인트로_탐정_3인칭
+            //Properties.Resources.인트로_탐정_3인칭
         };
 
         private void ShowDetective()
