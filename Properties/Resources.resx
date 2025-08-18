@@ -118,28 +118,61 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="한여주_혼란스러운-Photoroom" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\한여주_혼란스러운-Photoroom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="인트로_초반자막" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\인트로_초반자막.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="대사박스4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\대사박스4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="인트로_3_탐정등장" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\인트로_3_탐정등장2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="인트로_2_탐정등장" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\인트로_2_탐정등장.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="탐정" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\탐정1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="한여주_혼란스러운-Photoroom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\한여주_혼란스러운-Photoroom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="인트로_4_탐정등장" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\인트로_4_탐정등장2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="인트로_1_문닫혀있는" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\..\OneDrive\바탕 화면\새 폴더\인트로\인트로_1_문닫혀있는.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="2_탐정_등장" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\..\OneDrive\바탕 화면\새 폴더\인트로\2_탐정_등장.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="인트로_2_탐정등장" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\인트로_2_탐정등장.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="3_탐정_등장" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\..\OneDrive\바탕 화면\새 폴더\인트로\3_탐정_등장.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="대사박스4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\대사박스4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="인트로_한여주_시체발견_수정" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\인트로_한여주_시체발견_수정.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="인트로_수첩을받은주인공" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\인트로_수첩을받은주인공.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="인트로_탐정_시체발견_수정" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\인트로_탐정_시체발견_수정.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="대사박스5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\대사박스5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="탐정_고민하는모습" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\탐정_고민하는모습.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="한여주_충격먹은_찡그린1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\한여주_충격먹은_찡그린1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="점점점_말풍선 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\점점점_말풍선 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="인트로_탐정_3인칭" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\..\OneDrive\바탕 화면\새 폴더\인트로\인트로_탐정_3인칭.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="인트로_7_날_보는_탐정 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\인트로_7_날_보는_탐정 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="인트로_9_수첩건네는" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\인트로_9_수첩건네는.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="인트로_8_날_보는_탐정_확대" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\인트로_8_날_보는_탐정_확대.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

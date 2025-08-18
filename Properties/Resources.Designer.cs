@@ -63,29 +63,19 @@ namespace ghostDetectives.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        internal static System.Drawing.Bitmap _2_탐정_등장 {
-            get {
-                object obj = ResourceManager.GetObject("2_탐정_등장", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
-        internal static System.Drawing.Bitmap _3_탐정_등장 {
-            get {
-                object obj = ResourceManager.GetObject("3_탐정_등장", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
         internal static System.Drawing.Bitmap 대사박스4 {
             get {
                 object obj = ResourceManager.GetObject("대사박스4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap 대사박스5 {
+            get {
+                object obj = ResourceManager.GetObject("대사박스5", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,6 +103,66 @@ namespace ghostDetectives.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
+        internal static System.Drawing.Bitmap 인트로_3_탐정등장 {
+            get {
+                object obj = ResourceManager.GetObject("인트로_3_탐정등장", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap 인트로_4_탐정등장 {
+            get {
+                object obj = ResourceManager.GetObject("인트로_4_탐정등장", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap 인트로_7_날_보는_탐정__1_ {
+            get {
+                object obj = ResourceManager.GetObject("인트로_7_날_보는_탐정 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap 인트로_8_날_보는_탐정_확대 {
+            get {
+                object obj = ResourceManager.GetObject("인트로_8_날_보는_탐정_확대", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap 인트로_9_수첩건네는 {
+            get {
+                object obj = ResourceManager.GetObject("인트로_9_수첩건네는", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap 인트로_수첩을받은주인공 {
+            get {
+                object obj = ResourceManager.GetObject("인트로_수첩을받은주인공", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
         internal static System.Drawing.Bitmap 인트로_초반자막 {
             get {
                 object obj = ResourceManager.GetObject("인트로_초반자막", resourceCulture);
@@ -126,6 +176,66 @@ namespace ghostDetectives.Properties {
         internal static System.Drawing.Bitmap 인트로_탐정_3인칭 {
             get {
                 object obj = ResourceManager.GetObject("인트로_탐정_3인칭", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap 인트로_탐정_시체발견_수정 {
+            get {
+                object obj = ResourceManager.GetObject("인트로_탐정_시체발견_수정", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap 인트로_한여주_시체발견_수정 {
+            get {
+                object obj = ResourceManager.GetObject("인트로_한여주_시체발견_수정", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap 점점점_말풍선__1_ {
+            get {
+                object obj = ResourceManager.GetObject("점점점_말풍선 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap 탐정 {
+            get {
+                object obj = ResourceManager.GetObject("탐정", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap 탐정_고민하는모습 {
+            get {
+                object obj = ResourceManager.GetObject("탐정_고민하는모습", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap 한여주_충격먹은_찡그린1 {
+            get {
+                object obj = ResourceManager.GetObject("한여주_충격먹은_찡그린1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
