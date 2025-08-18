@@ -38,6 +38,9 @@
             blackPanel2 = new Panel();
             dotBubble = new PictureBox();
             panel4 = new Panel();
+            label9_1 = new Label();
+            label9 = new Label();
+            Box3 = new PictureBox();
             pictureBox9 = new PictureBox();
             pictureBox8 = new PictureBox();
             label8 = new Label();
@@ -72,6 +75,7 @@
             blackPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dotBubble).BeginInit();
             panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)Box3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Box1).BeginInit();
@@ -180,6 +184,9 @@
             // panel4
             // 
             panel4.BackColor = Color.Transparent;
+            panel4.Controls.Add(label9_1);
+            panel4.Controls.Add(label9);
+            panel4.Controls.Add(Box3);
             panel4.Controls.Add(pictureBox9);
             panel4.Controls.Add(pictureBox8);
             panel4.Controls.Add(label8);
@@ -192,6 +199,40 @@
             panel4.Size = new Size(929, 624);
             panel4.TabIndex = 18;
             panel4.Click += panel4_Click;
+            // 
+            // label9_1
+            // 
+            label9_1.AutoSize = true;
+            label9_1.Font = new Font("한컴 말랑말랑 Bold", 13.7999992F, FontStyle.Bold, GraphicsUnit.Point, 129);
+            label9_1.ForeColor = Color.Black;
+            label9_1.Image = Properties.Resources.대사박스6;
+            label9_1.Location = new Point(278, 529);
+            label9_1.Name = "label9_1";
+            label9_1.Size = new Size(398, 30);
+            label9_1.TabIndex = 19;
+            label9_1.Text = "당신은 억울한 죽음으로 혼이 되었을 겁니다.";
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Font = new Font("한컴 말랑말랑 Bold", 13.7999992F, FontStyle.Bold, GraphicsUnit.Point, 129);
+            label9.ForeColor = Color.Black;
+            label9.Image = Properties.Resources.대사박스6;
+            label9.Location = new Point(305, 527);
+            label9.Name = "label9";
+            label9.Size = new Size(339, 30);
+            label9.TabIndex = 18;
+            label9.Text = "혼이 되신 한여주 님께 말씀드립니다.\r\n";
+            // 
+            // Box3
+            // 
+            Box3.Image = Properties.Resources.대사박스6;
+            Box3.Location = new Point(225, 453);
+            Box3.Name = "Box3";
+            Box3.Size = new Size(493, 147);
+            Box3.SizeMode = PictureBoxSizeMode.StretchImage;
+            Box3.TabIndex = 3;
+            Box3.TabStop = false;
             // 
             // pictureBox9
             // 
@@ -500,6 +541,7 @@
             ((System.ComponentModel.ISupportInitialize)dotBubble).EndInit();
             panel4.ResumeLayout(false);
             panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)Box3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
             ((System.ComponentModel.ISupportInitialize)Box1).EndInit();
@@ -554,5 +596,8 @@
         private PictureBox dotBubble;
         private PictureBox pictureBox8;
         private PictureBox pictureBox9;
+        private PictureBox Box3;
+        private Label label9_1;
+        private Label label9;
     }
 }

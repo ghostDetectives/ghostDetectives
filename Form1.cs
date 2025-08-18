@@ -12,6 +12,8 @@ namespace ghostDetectives
         private int panel3ClickCount = 0; // 클릭 횟수 저장
         private int panel2ClickCount = 0;
         private int panel4ClickCount = 0;
+        private int picturBox8ClickCount = 0;
+
 
 
         public Form1()
@@ -284,7 +286,7 @@ namespace ghostDetectives
 
         private void blackPanel2_Click(object sender, EventArgs e)
         {
-            Control[] controlsToHide = { pictureBox3, panel2, blackPanel2, dotBox2, dotLabel2, dotBubble, pictureBox7, pictureBox9 };
+            Control[] controlsToHide = { pictureBox3, panel2, blackPanel2, dotBox2, dotLabel2, dotBubble, pictureBox7, pictureBox9, Box3, label9, label9_1 };
             foreach (var ctrl in controlsToHide)
             {
                 ctrl.Visible = false;
@@ -314,10 +316,11 @@ namespace ghostDetectives
                 label8.Visible = false;
                 dotBubble.Visible = false;
                 pictureBox9.Visible = false;
-
-
-
+                Box3.Visible = false;
+                label9.Visible = false;
+                label9_1.Visible = false;
             }
+
             else if (panel4ClickCount == 2)
             {
                 // 두 번째 클릭: 라벨 변경
@@ -326,6 +329,10 @@ namespace ghostDetectives
                 label8.Visible = true;
                 dotBubble.Visible = false;
                 pictureBox9.Visible = false;
+
+                Box3.Visible = false;
+                label9.Visible = false;
+                label9_1.Visible = false;
 
             }
 
@@ -338,6 +345,9 @@ namespace ghostDetectives
                 character1.Visible = false;
                 Box1.Visible = false;
                 pictureBox9.Visible = false;
+                Box3.Visible = false;
+                label9.Visible = false;
+                label9_1.Visible = false;
 
                 dotBubble.BackColor = Color.Transparent;
                 dotBubble.Parent = pictureBox7;
@@ -348,7 +358,7 @@ namespace ghostDetectives
             else if (panel4ClickCount == 4)
             {
                 // 네번째 클릭: 픽박8 전환 (날 보는 탐정)
-                Control[] controlsToHide = { label6, label7, label8, dotBubble, character1, Box1, pictureBox9 };
+                Control[] controlsToHide = { label6, label7, label8, dotBubble, character1, Box1, pictureBox9, Box3, label9, label9_1 };
                 foreach (var ctrl in controlsToHide)
                 {
                     ctrl.Visible = false;
@@ -360,8 +370,37 @@ namespace ghostDetectives
 
         private void pictureBox8_Click(object sender, EventArgs e)
         {
-            pictureBox8.Visible = false;
-            pictureBox9.Visible = true; // 날 보는 탐정 확대
+            picturBox8ClickCount++;
+
+            if (picturBox8ClickCount == 1)
+            {
+                // 첫 번째 클릭: 날 보는 탐정 확대
+
+                Control[] controlsToHide = { pictureBox8, label9_1 };
+                foreach (var ctrl in controlsToHide)
+                {
+                    ctrl.Visible = false;
+                }
+
+                Box3.BackColor = Color.Transparent;
+                Box3.Parent = pictureBox9;
+
+                pictureBox9.Visible = true; 
+                Box3.Visible = true;
+                label9.Visible = true;
+                label9.BringToFront();
+
+            }
+
+            else if (picturBox8ClickCount == 2)
+            {
+                // 두 번째 클릭: 라벨 변경
+
+
+            }
+
+
+
         }
     }
 }

@@ -83,6 +83,16 @@ namespace ghostDetectives.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
+        internal static System.Drawing.Bitmap 대사박스6 {
+            get {
+                object obj = ResourceManager.GetObject("대사박스6", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
         internal static System.Drawing.Bitmap 인트로_1_문닫혀있는 {
             get {
                 object obj = ResourceManager.GetObject("인트로_1_문닫혀있는", resourceCulture);
