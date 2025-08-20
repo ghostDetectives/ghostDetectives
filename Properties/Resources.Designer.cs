@@ -83,6 +83,16 @@ namespace ghostDetectives.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
+        internal static System.Drawing.Bitmap 대사박스5_Photoroom {
+            get {
+                object obj = ResourceManager.GetObject("대사박스5-Photoroom", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
         internal static System.Drawing.Bitmap 대사박스6 {
             get {
                 object obj = ResourceManager.GetObject("대사박스6", resourceCulture);
@@ -233,9 +243,9 @@ namespace ghostDetectives.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        internal static System.Drawing.Bitmap 주방_에너지바 {
+        internal static System.Drawing.Bitmap 주방_에너지바_Photoroom {
             get {
-                object obj = ResourceManager.GetObject("주방_에너지바", resourceCulture);
+                object obj = ResourceManager.GetObject("주방_에너지바-Photoroom", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
