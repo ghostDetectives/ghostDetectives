@@ -12,6 +12,8 @@ namespace ghostDetectives
 {
     public partial class Form2 : Form
     {
+        //private Image houseImage;
+
         public Form2()
         {
             InitializeComponent();
@@ -20,6 +22,12 @@ namespace ghostDetectives
             cluePanel.Visible = false;
         }
 
+
+        //private void Form2_Load(object sender, EventArgs e)
+        //{
+        //    houseImage = Properties.Resources.집_최종_완;
+        //    housePanel.BackgroundImage = houseImage; // 실제 클릭할 때는 이미 로드돼 있음
+        //}
 
         private void panel1_Click(object sender, EventArgs e) // 에너지바 클릭
         {
@@ -37,13 +45,19 @@ namespace ghostDetectives
             // 폼 안의 모든 컨트롤 숨기기
             foreach (Control ctrl in this.Controls)
             {
-                ctrl.Visible = false;
+                if (ctrl != housePanel) // housePanel은 건드리지 않음
+                {
+                    ctrl.Visible = false;
+                }
             }
+
+            cluePanel.Visible = false;
+            cluePanel.SendToBack();
 
             // housePanel만 다시 보이도록
             housePanel.Visible = true;
             housePanel.BringToFront();
         }
-    
+
     }
 }
