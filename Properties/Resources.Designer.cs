@@ -163,9 +163,29 @@ namespace ghostDetectives.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
+        internal static System.Drawing.Bitmap 인트로_9_수첩건네는__1_ {
+            get {
+                object obj = ResourceManager.GetObject("인트로_9_수첩건네는 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
         internal static System.Drawing.Bitmap 인트로_수첩을받은주인공 {
             get {
                 object obj = ResourceManager.GetObject("인트로_수첩을받은주인공", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap 인트로_수첩을받은주인공1 {
+            get {
+                object obj = ResourceManager.GetObject("인트로_수첩을받은주인공1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -213,6 +233,26 @@ namespace ghostDetectives.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
+        internal static System.Drawing.Bitmap 주방_에너지바 {
+            get {
+                object obj = ResourceManager.GetObject("주방_에너지바", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap 집_최종_완 {
+            get {
+                object obj = ResourceManager.GetObject("집_최종_완", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
         internal static System.Drawing.Bitmap 탐정 {
             get {
                 object obj = ResourceManager.GetObject("탐정", resourceCulture);
@@ -226,6 +266,16 @@ namespace ghostDetectives.Properties {
         internal static System.Drawing.Bitmap 탐정_고민하는모습 {
             get {
                 object obj = ResourceManager.GetObject("탐정_고민하는모습", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap 탐정_고민하는모습1 {
+            get {
+                object obj = ResourceManager.GetObject("탐정_고민하는모습1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -3,6 +3,7 @@ using System.Reflection;
 using System.Windows.Forms;
 using ghostDetectives.Properties;
 using Microsoft.VisualBasic.ApplicationServices;
+using static System.Windows.Forms.DataFormats;
 
 namespace ghostDetectives
 {
@@ -12,9 +13,8 @@ namespace ghostDetectives
         private int panel3ClickCount = 0; // 클릭 횟수 저장
         private int panel2ClickCount = 0;
         private int panel4ClickCount = 0;
-        private int picturBox8ClickCount = 0;
-
-
+        private int pictureBox9ClickCount = 0;
+        private int pictureBox10ClickCount = 0;
 
         public Form1()
         {
@@ -42,7 +42,13 @@ namespace ghostDetectives
 
             panel3.MouseClick += panel3_Click;
 
+            // 패널 클릭 이벤트 연결
+            //panel6.Click += panel6_Click; //네
+            panel7.Click += panel7_Click; //아니요
+            panel8.Click += panel8_Click; // 다음 검정화면
         }
+
+
 
         private void pictureBox1_Click(object sender, EventArgs e) // 검은 인트로 클릭 시 여주 등장으로 넘어감
         {
@@ -160,7 +166,7 @@ namespace ghostDetectives
             Properties.Resources.인트로_2_탐정등장,
             Properties.Resources.인트로_3_탐정등장,
             Properties.Resources.인트로_4_탐정등장,
-            //Properties.Resources.인트로_탐정_3인칭
+
         };
 
         private void ShowDetective()
@@ -241,7 +247,8 @@ namespace ghostDetectives
         private void ShowBlackPanel2() /// 두번째 검은화면 (탐정)
         {
 
-            Control[] controlsToHide = { pictureBox4, panel3, label4, pictureBox7, panel4, character1, Box1, label6, dotBubble, pictureBox8 };
+            Control[] controlsToHide = { pictureBox4, panel3, label4, pictureBox7,
+                panel4, character1, Box1, label6, dotBubble, pictureBox8 };
             foreach (var ctrl in controlsToHide)
             {
                 ctrl.Visible = false;
@@ -286,7 +293,9 @@ namespace ghostDetectives
 
         private void blackPanel2_Click(object sender, EventArgs e)
         {
-            Control[] controlsToHide = { pictureBox3, panel2, blackPanel2, dotBox2, dotLabel2, dotBubble, pictureBox7, pictureBox9, Box3, label9, label9_1 };
+            Control[] controlsToHide = { pictureBox3, panel2, blackPanel2, dotBox2, dotLabel2,
+                dotBubble, pictureBox7, pictureBox9, Box3, label9, label9_1, label9_2, label9_3, label9_4,
+                pictureBox10, Box4, label10, panel8, pictureBox12, panel5, panel6, panel7};
             foreach (var ctrl in controlsToHide)
             {
                 ctrl.Visible = false;
@@ -311,43 +320,45 @@ namespace ghostDetectives
             if (panel4ClickCount == 1)
             {
                 // 첫 번째 클릭: 라벨 변경
-                label6.Visible = false;
+
+                Control[] controlsToHide = { label6, label8, dotBubble, pictureBox9, Box3,
+                    label9, label9_1, label9_2, label9_3, label9_4, pictureBox10, Box4, label10, 
+                    panel8, pictureBox12, panel5, panel6, panel7 };
+                foreach (var ctrl in controlsToHide)
+                {
+                    ctrl.Visible = false;
+                }
+
                 label7.Visible = true;
-                label8.Visible = false;
-                dotBubble.Visible = false;
-                pictureBox9.Visible = false;
-                Box3.Visible = false;
-                label9.Visible = false;
-                label9_1.Visible = false;
             }
 
             else if (panel4ClickCount == 2)
             {
                 // 두 번째 클릭: 라벨 변경
-                label6.Visible = false;
-                label7.Visible = false;
-                label8.Visible = true;
-                dotBubble.Visible = false;
-                pictureBox9.Visible = false;
 
-                Box3.Visible = false;
-                label9.Visible = false;
-                label9_1.Visible = false;
+                Control[] controlsToHide = { label6, label7, dotBubble, pictureBox9, Box3,
+                    label9, label9_1, label9_2, label9_3, label9_4, pictureBox10, Box4, 
+                    label10, panel8, pictureBox12, panel5, panel6, panel7 };
+                foreach (var ctrl in controlsToHide)
+                {
+                    ctrl.Visible = false;
+                }
+
+                label8.Visible = true;
 
             }
 
             else if (panel4ClickCount == 3)
             {
                 // 세번째 클릭: 점점점 말풍선
-                label6.Visible = false;
-                label7.Visible = false;
-                label8.Visible = false;
-                character1.Visible = false;
-                Box1.Visible = false;
-                pictureBox9.Visible = false;
-                Box3.Visible = false;
-                label9.Visible = false;
-                label9_1.Visible = false;
+
+                Control[] controlsToHide = { label6, label7, label8, character1, Box1,pictureBox9, Box3,
+                    label9, label9_1, label9_2, label9_3, label9_4, pictureBox10, Box4, label10, 
+                    panel8, pictureBox12, panel5, panel6, panel7 };
+                foreach (var ctrl in controlsToHide)
+                {
+                    ctrl.Visible = false;
+                }
 
                 dotBubble.BackColor = Color.Transparent;
                 dotBubble.Parent = pictureBox7;
@@ -358,7 +369,9 @@ namespace ghostDetectives
             else if (panel4ClickCount == 4)
             {
                 // 네번째 클릭: 픽박8 전환 (날 보는 탐정)
-                Control[] controlsToHide = { label6, label7, label8, dotBubble, character1, Box1, pictureBox9, Box3, label9, label9_1 };
+                Control[] controlsToHide = { label6, label7, label8, dotBubble, character1,
+                    Box1, pictureBox9, Box3, label9, label9_1, label9_2, label9_3, label9_4,
+                    pictureBox10, Box4, label10, panel8, pictureBox12, panel5, panel6, panel7 };
                 foreach (var ctrl in controlsToHide)
                 {
                     ctrl.Visible = false;
@@ -370,13 +383,34 @@ namespace ghostDetectives
 
         private void pictureBox8_Click(object sender, EventArgs e)
         {
-            picturBox8ClickCount++;
+            // 날 보는 탐정 확대
 
-            if (picturBox8ClickCount == 1)
+            Control[] controlsToHide = { pictureBox8, label9_1, label9_2, label9_3, label9_4,
+                pictureBox10, Box4, label10, panel8, pictureBox12, panel5, panel6, panel7 };
+            foreach (var ctrl in controlsToHide)
             {
-                // 첫 번째 클릭: 날 보는 탐정 확대
+                ctrl.Visible = false;
+            }
 
-                Control[] controlsToHide = { pictureBox8, label9_1 };
+            Box3.BackColor = Color.Transparent;
+            Box3.Parent = pictureBox9;
+
+            pictureBox9.Visible = true;
+            Box3.Visible = true;
+            label9.Visible = true;// 혼이 되신 한여주 님께 말씀드립니다.
+            label9.BringToFront();
+
+        }
+
+        private void pictureBox9_Click_(object sender, EventArgs e)
+        {
+            pictureBox9ClickCount++;
+
+            // 라벨 변경
+            if (pictureBox9ClickCount == 1)
+            {
+                Control[] controlsToHide = { pictureBox8, label9, label9_2, label9_3,
+                    label9_4, pictureBox10, Box4, label10, panel8, pictureBox12, panel5, panel6, panel7 };
                 foreach (var ctrl in controlsToHide)
                 {
                     ctrl.Visible = false;
@@ -385,21 +419,159 @@ namespace ghostDetectives
                 Box3.BackColor = Color.Transparent;
                 Box3.Parent = pictureBox9;
 
-                pictureBox9.Visible = true; 
+                pictureBox9.Visible = true;
                 Box3.Visible = true;
-                label9.Visible = true;
-                label9.BringToFront();
-
+                label9_1.Visible = true;
+                label9_1.BringToFront();
             }
 
-            else if (picturBox8ClickCount == 2)
+            else if (pictureBox9ClickCount == 2)
             {
-                // 두 번째 클릭: 라벨 변경
+                // 두 번째 클릭
+                Control[] controlsToHide = { pictureBox8, label9, label9_1, label9_3,
+                    label9_4, pictureBox10, Box4, label10, panel8, pictureBox12, panel5, panel6, panel7 };
+                foreach (var ctrl in controlsToHide)
+                {
+                    ctrl.Visible = false;
+                }
 
+                Box3.BackColor = Color.Transparent;
+                Box3.Parent = pictureBox9;
+
+                pictureBox9.Visible = true;
+                Box3.Visible = true;
+                label9_2.Visible = true;
+                label9_2.BringToFront();
 
             }
 
+            else if (pictureBox9ClickCount == 3)
+            {
+                // 세 번째 클릭
+                Control[] controlsToHide = { pictureBox8, label9, label9_1, label9_2,
+                    label9_4, pictureBox10, Box4, label10, panel8, pictureBox12, panel5, panel6, panel7 };
+                foreach (var ctrl in controlsToHide)
+                {
+                    ctrl.Visible = false;
+                }
 
+                Box3.BackColor = Color.Transparent;
+                Box3.Parent = pictureBox9;
+
+                pictureBox9.Visible = true;
+                Box3.Visible = true;
+                label9_3.Visible = true;
+                label9_3.BringToFront();
+
+            }
+
+            else if (pictureBox9ClickCount == 4)
+            {
+                // 네 번째 클릭
+                Control[] controlsToHide = { pictureBox8, label9, label9_1, label9_2,
+                    label9_3, pictureBox10, Box4, label10, panel8, pictureBox12, panel5, panel6, panel7 };
+                foreach (var ctrl in controlsToHide)
+                {
+                    ctrl.Visible = false;
+                }
+
+                Box3.BackColor = Color.Transparent;
+                Box3.Parent = pictureBox9;
+
+                pictureBox9.Visible = true;
+                Box3.Visible = true;
+                label9_4.Visible = true;
+                label9_4.BringToFront();
+
+            }
+
+            else if (pictureBox9ClickCount == 5)
+            {
+                // 다섯번째 클릭
+                Control[] controlsToHide = { pictureBox8, label9, label9_1, label9_2, label9_3,
+                    label9_4, Box3, pictureBox9, pictureBox10, Box4, label10 , panel8, pictureBox12, panel5, panel6, panel7};
+                foreach (var ctrl in controlsToHide)
+                {
+                    ctrl.Visible = false;
+                }
+
+                pictureBox10.Visible = true; // 나에게 수첩 건네는 
+
+            }
+
+        }
+
+        private void pictureBox10_Click(object sender, EventArgs e) // 나에게 수첩 건네는
+        {
+
+            pictureBox10ClickCount++;
+
+            if (pictureBox10ClickCount == 1)
+            {
+                Control[] controlsToHide = { pictureBox8, label9, label9_1, label9_2, label9_3,
+                    label9_4, Box3, pictureBox9, panel8, pictureBox12, panel5, panel6, panel7 };
+                foreach (var ctrl in controlsToHide)
+                {
+                    ctrl.Visible = false;
+                }
+
+                pictureBox10.Visible = true;
+                Box4.BackColor = Color.Transparent;
+                Box4.Parent = pictureBox10;
+                Box4.Visible = true;
+                label10.Visible = true;
+                label10.BringToFront();
+            }
+
+            else if (pictureBox10ClickCount == 2)
+            {
+                Control[] controlsToHide = { pictureBox8, label9, label9_1, label9_2, label9_3,
+                    label9_4, Box3, pictureBox9, pictureBox10, Box4, label10, panel8, pictureBox12 };
+                foreach (var ctrl in controlsToHide)
+                {
+                    ctrl.Visible = false;
+                }
+
+                panel5.Visible = true; //탐정이 수첩 들고 있는
+                panel6.Visible = true; // 네
+                panel7.Visible = true; // 아니요
+            }
+        }
+
+        // === 패널6(네) 클릭 → Form2 열기 ===
+        private void panel6_Click(object sender, EventArgs e)
+        {
+            Form2 form2 = new Form2(); // Form2 객체 생성
+            form2.Show();              // Form2 띄우기 
+            this.Hide();               // 현재 폼 지우기
+        }
+
+
+
+        // === 패널7(아니요) 클릭 → 패널8(검은화면) 보이게 ===
+        private void panel7_Click(object sender, EventArgs e) // 아니요 클릭시
+        {
+
+            Control[] controlsToHide = { pictureBox7, panel4, pictureBox8, label9, label9_1, label9_2, 
+                label9_3,label9_4, Box3, pictureBox9, pictureBox10, Box4, label10,panel5, panel6, panel7, };
+            foreach (var ctrl in controlsToHide)
+            {
+                ctrl.Visible = false;
+            }
+
+            panel8.Parent = this;
+
+            panel8.Visible = true;   // 패널8 보이게 설정
+            pictureBox11.Visible = true;
+            pictureBox12.Visible = true;
+            label11.Visible = true;
+            panel8.BringToFront();   // 다른 컨트롤 위로 올려줌
+        }
+
+        // === 패널8 클릭 → 프로그램 종료 ===
+        private void panel8_Click(object sender, EventArgs e)
+        {
+            Application.Exit();  // 전체 프로그램 종료
 
         }
     }

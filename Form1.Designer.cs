@@ -38,6 +38,19 @@
             blackPanel2 = new Panel();
             dotBubble = new PictureBox();
             panel4 = new Panel();
+            panel5 = new Panel();
+            panel8 = new Panel();
+            label11 = new Label();
+            pictureBox12 = new PictureBox();
+            pictureBox11 = new PictureBox();
+            panel7 = new Panel();
+            panel6 = new Panel();
+            label10 = new Label();
+            Box4 = new PictureBox();
+            pictureBox10 = new PictureBox();
+            label9_4 = new Label();
+            label9_3 = new Label();
+            label9_2 = new Label();
             label9_1 = new Label();
             label9 = new Label();
             Box3 = new PictureBox();
@@ -54,7 +67,6 @@
             label3 = new Label();
             label2 = new Label();
             Box2 = new PictureBox();
-            T_character = new PictureBox();
             pictureBox3 = new PictureBox();
             label5 = new Label();
             label4 = new Label();
@@ -75,6 +87,12 @@
             blackPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dotBubble).BeginInit();
             panel4.SuspendLayout();
+            panel5.SuspendLayout();
+            panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Box4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Box3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
@@ -83,7 +101,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dotBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Box2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)T_character).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
@@ -151,7 +168,6 @@
             panel2.Controls.Add(label3);
             panel2.Controls.Add(label2);
             panel2.Controls.Add(Box2);
-            panel2.Controls.Add(T_character);
             panel2.Location = new Point(0, 0);
             panel2.Name = "panel2";
             panel2.Size = new Size(936, 624);
@@ -167,7 +183,7 @@
             blackPanel2.Controls.Add(dotBox2);
             blackPanel2.Location = new Point(0, 0);
             blackPanel2.Name = "blackPanel2";
-            blackPanel2.Size = new Size(945, 620);
+            blackPanel2.Size = new Size(939, 620);
             blackPanel2.TabIndex = 11;
             // 
             // dotBubble
@@ -184,6 +200,13 @@
             // panel4
             // 
             panel4.BackColor = Color.Transparent;
+            panel4.Controls.Add(panel5);
+            panel4.Controls.Add(label10);
+            panel4.Controls.Add(Box4);
+            panel4.Controls.Add(pictureBox10);
+            panel4.Controls.Add(label9_4);
+            panel4.Controls.Add(label9_3);
+            panel4.Controls.Add(label9_2);
             panel4.Controls.Add(label9_1);
             panel4.Controls.Add(label9);
             panel4.Controls.Add(Box3);
@@ -196,9 +219,152 @@
             panel4.Controls.Add(character1);
             panel4.Location = new Point(0, 0);
             panel4.Name = "panel4";
-            panel4.Size = new Size(929, 624);
+            panel4.Size = new Size(939, 624);
             panel4.TabIndex = 18;
             panel4.Click += panel4_Click;
+            // 
+            // panel5
+            // 
+            panel5.BackgroundImage = Properties.Resources.인트로_수첩을받은주인공1;
+            panel5.BackgroundImageLayout = ImageLayout.Stretch;
+            panel5.Controls.Add(panel8);
+            panel5.Controls.Add(panel7);
+            panel5.Controls.Add(panel6);
+            panel5.Location = new Point(4, 4);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(932, 617);
+            panel5.TabIndex = 26;
+            // 
+            // panel8
+            // 
+            panel8.BackColor = Color.Black;
+            panel8.Controls.Add(label11);
+            panel8.Controls.Add(pictureBox12);
+            panel8.Controls.Add(pictureBox11);
+            panel8.Dock = DockStyle.Fill;
+            panel8.Location = new Point(0, 0);
+            panel8.Name = "panel8";
+            panel8.Size = new Size(932, 617);
+            panel8.TabIndex = 0;
+            panel8.Click += panel8_Click;
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Font = new Font("한컴 말랑말랑 Bold", 13.7999992F, FontStyle.Bold, GraphicsUnit.Point, 129);
+            label11.Image = Properties.Resources.대사박스4;
+            label11.Location = new Point(340, 460);
+            label11.Name = "label11";
+            label11.Size = new Size(253, 60);
+            label11.TabIndex = 2;
+            label11.Text = "당신의 선택이 그렇다면.... \r\n전 이만 가보겠습니다. ";
+            // 
+            // pictureBox12
+            // 
+            pictureBox12.Image = Properties.Resources.대사박스4;
+            pictureBox12.Location = new Point(292, 435);
+            pictureBox12.Name = "pictureBox12";
+            pictureBox12.Size = new Size(479, 134);
+            pictureBox12.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox12.TabIndex = 1;
+            pictureBox12.TabStop = false;
+            // 
+            // pictureBox11
+            // 
+            pictureBox11.Image = Properties.Resources.탐정;
+            pictureBox11.Location = new Point(105, 338);
+            pictureBox11.Name = "pictureBox11";
+            pictureBox11.Size = new Size(171, 285);
+            pictureBox11.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox11.TabIndex = 0;
+            pictureBox11.TabStop = false;
+            // 
+            // panel7
+            // 
+            panel7.Location = new Point(353, 559);
+            panel7.Name = "panel7";
+            panel7.Size = new Size(237, 54);
+            panel7.TabIndex = 1;
+            panel7.Click += panel7_Click;
+            // 
+            // panel6
+            // 
+            panel6.Location = new Point(353, 478);
+            panel6.Name = "panel6";
+            panel6.Size = new Size(237, 59);
+            panel6.TabIndex = 0;
+            panel6.Click += panel6_Click;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Font = new Font("한컴 말랑말랑 Bold", 13.7999992F, FontStyle.Bold, GraphicsUnit.Point, 129);
+            label10.Image = Properties.Resources.대사박스6;
+            label10.Location = new Point(303, 529);
+            label10.Name = "label10";
+            label10.Size = new Size(352, 30);
+            label10.TabIndex = 25;
+            label10.Text = "자, 그럼 이 노트에 의사를 밝혀주세요.";
+            // 
+            // Box4
+            // 
+            Box4.Image = Properties.Resources.대사박스6;
+            Box4.Location = new Point(190, 457);
+            Box4.Name = "Box4";
+            Box4.Size = new Size(564, 143);
+            Box4.SizeMode = PictureBoxSizeMode.StretchImage;
+            Box4.TabIndex = 24;
+            Box4.TabStop = false;
+            // 
+            // pictureBox10
+            // 
+            pictureBox10.Image = Properties.Resources.인트로_9_수첩건네는__1_;
+            pictureBox10.Location = new Point(0, 0);
+            pictureBox10.Name = "pictureBox10";
+            pictureBox10.Size = new Size(939, 620);
+            pictureBox10.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox10.TabIndex = 23;
+            pictureBox10.TabStop = false;
+            pictureBox10.Click += pictureBox10_Click;
+            // 
+            // label9_4
+            // 
+            label9_4.AutoSize = true;
+            label9_4.Font = new Font("한컴 말랑말랑 Bold", 13.7999992F, FontStyle.Bold, GraphicsUnit.Point, 129);
+            label9_4.ForeColor = Color.Black;
+            label9_4.Image = Properties.Resources.대사박스6;
+            label9_4.Location = new Point(305, 512);
+            label9_4.Name = "label9_4";
+            label9_4.Size = new Size(358, 60);
+            label9_4.TabIndex = 22;
+            label9_4.Text = "그 과정에서 생겨나는 부정적인 것들은 \r\n이겨내셔야 합니다.";
+            label9_4.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label9_3
+            // 
+            label9_3.AutoSize = true;
+            label9_3.Font = new Font("한컴 말랑말랑 Bold", 13.7999992F, FontStyle.Bold, GraphicsUnit.Point, 129);
+            label9_3.ForeColor = Color.Black;
+            label9_3.Image = Properties.Resources.대사박스6;
+            label9_3.Location = new Point(274, 511);
+            label9_3.Name = "label9_3";
+            label9_3.Size = new Size(422, 60);
+            label9_3.TabIndex = 21;
+            label9_3.Text = "제가 죽음의 진실을 \r\n파헤칠 수 있도록 도와드리겠습니다. 하지만….";
+            label9_3.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label9_2
+            // 
+            label9_2.AutoSize = true;
+            label9_2.Font = new Font("한컴 말랑말랑 Bold", 13.7999992F, FontStyle.Bold, GraphicsUnit.Point, 129);
+            label9_2.ForeColor = Color.Black;
+            label9_2.Image = Properties.Resources.대사박스6;
+            label9_2.Location = new Point(321, 512);
+            label9_2.Name = "label9_2";
+            label9_2.Size = new Size(314, 60);
+            label9_2.TabIndex = 20;
+            label9_2.Text = "과로사인 것처럼 보이지만...\r\n제 예상으로는 확실히 타살입니다.";
+            label9_2.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label9_1
             // 
@@ -206,7 +372,7 @@
             label9_1.Font = new Font("한컴 말랑말랑 Bold", 13.7999992F, FontStyle.Bold, GraphicsUnit.Point, 129);
             label9_1.ForeColor = Color.Black;
             label9_1.Image = Properties.Resources.대사박스6;
-            label9_1.Location = new Point(278, 529);
+            label9_1.Location = new Point(277, 526);
             label9_1.Name = "label9_1";
             label9_1.Size = new Size(398, 30);
             label9_1.TabIndex = 19;
@@ -218,7 +384,7 @@
             label9.Font = new Font("한컴 말랑말랑 Bold", 13.7999992F, FontStyle.Bold, GraphicsUnit.Point, 129);
             label9.ForeColor = Color.Black;
             label9.Image = Properties.Resources.대사박스6;
-            label9.Location = new Point(305, 527);
+            label9.Location = new Point(303, 525);
             label9.Name = "label9";
             label9.Size = new Size(339, 30);
             label9.TabIndex = 18;
@@ -227,9 +393,9 @@
             // Box3
             // 
             Box3.Image = Properties.Resources.대사박스6;
-            Box3.Location = new Point(225, 453);
+            Box3.Location = new Point(222, 453);
             Box3.Name = "Box3";
-            Box3.Size = new Size(493, 147);
+            Box3.Size = new Size(515, 147);
             Box3.SizeMode = PictureBoxSizeMode.StretchImage;
             Box3.TabIndex = 3;
             Box3.TabStop = false;
@@ -239,17 +405,18 @@
             pictureBox9.Image = Properties.Resources.인트로_8_날_보는_탐정_확대;
             pictureBox9.Location = new Point(0, 0);
             pictureBox9.Name = "pictureBox9";
-            pictureBox9.Size = new Size(932, 627);
+            pictureBox9.Size = new Size(939, 627);
             pictureBox9.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox9.TabIndex = 17;
             pictureBox9.TabStop = false;
+            pictureBox9.Click += pictureBox9_Click_;
             // 
             // pictureBox8
             // 
             pictureBox8.Image = Properties.Resources.인트로_7_날_보는_탐정__1_;
             pictureBox8.Location = new Point(0, 0);
             pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(929, 624);
+            pictureBox8.Size = new Size(939, 624);
             pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox8.TabIndex = 16;
             pictureBox8.TabStop = false;
@@ -319,7 +486,7 @@
             pictureBox7.Image = Properties.Resources.인트로_탐정_시체발견_수정;
             pictureBox7.Location = new Point(0, 0);
             pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(929, 624);
+            pictureBox7.Size = new Size(939, 624);
             pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox7.TabIndex = 17;
             pictureBox7.TabStop = false;
@@ -352,12 +519,12 @@
             label3.BackColor = Color.DarkOrange;
             label3.Font = new Font("한컴 말랑말랑 Bold", 13.7999992F, FontStyle.Bold, GraphicsUnit.Point, 129);
             label3.Image = Properties.Resources.대사박스4;
-            label3.Location = new Point(292, 457);
+            label3.Location = new Point(305, 507);
             label3.Name = "label3";
-            label3.Size = new Size(434, 60);
+            label3.Size = new Size(341, 60);
             label3.TabIndex = 10;
-            label3.Text = "혼과 협력하기 위해서는 먼저 어떻게 된 일인지 \r\n알아봐야겠어.";
-            label3.TextAlign = ContentAlignment.MiddleLeft;
+            label3.Text = "혼과 협력하기 위해서는 \r\n먼저 어떻게 된 일인지 알아봐야겠어.";
+            label3.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label2
             // 
@@ -365,7 +532,7 @@
             label2.BackColor = Color.DarkOrange;
             label2.Font = new Font("한컴 말랑말랑 Bold", 13.7999992F, FontStyle.Bold, GraphicsUnit.Point, 129);
             label2.Image = Properties.Resources.대사박스4;
-            label2.Location = new Point(288, 471);
+            label2.Location = new Point(255, 521);
             label2.Name = "label2";
             label2.Size = new Size(425, 30);
             label2.TabIndex = 9;
@@ -373,23 +540,13 @@
             // 
             // Box2
             // 
-            Box2.Image = Properties.Resources.대사박스4;
-            Box2.Location = new Point(250, 425);
+            Box2.Image = Properties.Resources.대사박스6;
+            Box2.Location = new Point(200, 457);
             Box2.Name = "Box2";
-            Box2.Size = new Size(552, 155);
+            Box2.Size = new Size(526, 134);
             Box2.SizeMode = PictureBoxSizeMode.StretchImage;
             Box2.TabIndex = 8;
             Box2.TabStop = false;
-            // 
-            // T_character
-            // 
-            T_character.Image = Properties.Resources.탐정;
-            T_character.Location = new Point(23, 345);
-            T_character.Name = "T_character";
-            T_character.Size = new Size(263, 292);
-            T_character.SizeMode = PictureBoxSizeMode.Zoom;
-            T_character.TabIndex = 7;
-            T_character.TabStop = false;
             // 
             // pictureBox3
             // 
@@ -514,7 +671,7 @@
             // 
             // timer1
             // 
-            timer1.Interval = 1000;
+            timer1.Interval = 1500;
             timer1.Tick += timer1_Tick;
             // 
             // Form1
@@ -541,6 +698,13 @@
             ((System.ComponentModel.ISupportInitialize)dotBubble).EndInit();
             panel4.ResumeLayout(false);
             panel4.PerformLayout();
+            panel5.ResumeLayout(false);
+            panel8.ResumeLayout(false);
+            panel8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Box4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
             ((System.ComponentModel.ISupportInitialize)Box3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
@@ -549,7 +713,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             ((System.ComponentModel.ISupportInitialize)dotBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)Box2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)T_character).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
@@ -574,7 +737,6 @@
         private Label label3;
         private Label label2;
         private PictureBox Box2;
-        private PictureBox T_character;
         private PictureBox dotBox;
         private Label dotLabel;
         private PictureBox pictureBox4;
@@ -599,5 +761,18 @@
         private PictureBox Box3;
         private Label label9_1;
         private Label label9;
+        private Label label9_2;
+        private Label label9_3;
+        private Label label9_4;
+        private PictureBox pictureBox10;
+        private PictureBox Box4;
+        private Label label10;
+        private Panel panel5;
+        private Panel panel7;
+        private Panel panel6;
+        private Panel panel8;
+        private Label label11;
+        private PictureBox pictureBox12;
+        private PictureBox pictureBox11;
     }
 }
