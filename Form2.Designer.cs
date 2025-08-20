@@ -190,7 +190,6 @@
             Controls.Add(housePanel);
             Name = "Form2";
             Text = "Form2";
-            Load += Form2_Load;
             housePanel.ResumeLayout(false);
             cluePanel.ResumeLayout(false);
             cluePanel.PerformLayout();
