@@ -54,7 +54,7 @@ namespace ghostDetectives
 
             housePanel.BackgroundImageLayout = ImageLayout.None;
             housePanel.Dock = DockStyle.None;
-
+           
 
 
             // === 키 입력 ===
@@ -73,7 +73,7 @@ namespace ghostDetectives
             playerBox.BringToFront();
 
             // === 오버레이는 폼 최상단으로 ===
-            if (pictureBox1.Parent != this) pictureBox1.Parent = this;
+            if (pictureBox1.Parent != housePanel) pictureBox1.Parent =  housePanel;
             if (cluePanel.Parent != this) cluePanel.Parent = this;
             pictureBox1.BringToFront();
             cluePanel.BringToFront();
@@ -105,10 +105,15 @@ namespace ghostDetectives
             viewportPanel.Resize += (s, e) => UpdateCameraAndLayers();
 
             // === 클릭 이벤트 보장 ===
-            pictureBox1.Click -= panel1_Click;
-            pictureBox1.Click += panel1_Click;
+            pictureBox1.Click -= pictureBox1_Click;
+            pictureBox1.Click += pictureBox1_Click;
 
             UpdateCameraAndLayers();
+        }
+
+        private void pictureBox1_Click(object? sender, EventArgs e) // 에너지바
+        {
+
         }
 
         // ================== 배경 축소(방법2) 구현 ==================
@@ -299,9 +304,6 @@ namespace ghostDetectives
             pictureBox1.BringToFront();
         }
 
-        private void playerBox_Click(object sender, EventArgs e) { }
-
-        private void panel1_Paint(object sender, PaintEventArgs e) { }
 
         // ===== 메모리 정리 =====
         protected override void OnFormClosed(FormClosedEventArgs e)
