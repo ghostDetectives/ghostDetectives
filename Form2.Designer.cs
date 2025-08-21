@@ -51,18 +51,18 @@
             housePanel.BackgroundImageLayout = ImageLayout.Stretch;
             housePanel.Controls.Add(pictureBox1);
             housePanel.Controls.Add(cluePanel);
-            housePanel.Location = new Point(-27, 1);
+            housePanel.Location = new Point(-21, 1);
+            housePanel.Margin = new Padding(2, 2, 2, 2);
             housePanel.Name = "housePanel";
-            housePanel.Size = new Size(990, 615);
+            housePanel.Size = new Size(770, 461);
             housePanel.TabIndex = 0;
             // 
             // pictureBox1
             // 
             pictureBox1.BackColor = Color.IndianRed;
-            pictureBox1.Location = new Point(501, 209);
-            pictureBox1.Margin = new Padding(4, 4, 4, 4);
+            pictureBox1.Location = new Point(390, 157);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(46, 37);
+            pictureBox1.Size = new Size(36, 28);
             pictureBox1.TabIndex = 8;
             pictureBox1.TabStop = false;
             // 
@@ -74,18 +74,18 @@
             cluePanel.Controls.Add(clueBox1);
             cluePanel.Controls.Add(clue1);
             cluePanel.Location = new Point(0, 0);
+            cluePanel.Margin = new Padding(2, 2, 2, 2);
             cluePanel.Name = "cluePanel";
-            cluePanel.Size = new Size(987, 615);
+            cluePanel.Size = new Size(768, 461);
             cluePanel.TabIndex = 6;
             cluePanel.Click += cluePanel_Click;
             // 
             // playerBox
             // 
             playerBox.BackgroundImageLayout = ImageLayout.Stretch;
-            playerBox.Location = new Point(98, 408);
-            playerBox.Margin = new Padding(4, 4, 4, 4);
+            playerBox.Location = new Point(76, 306);
             playerBox.Name = "playerBox";
-            playerBox.Size = new Size(127, 207);
+            playerBox.Size = new Size(99, 155);
             playerBox.TabIndex = 9;
             playerBox.TabStop = false;
             // 
@@ -95,9 +95,10 @@
             clueLabel1.BackColor = Color.Transparent;
             clueLabel1.Font = new Font("한컴 말랑말랑 Bold", 12F, FontStyle.Bold, GraphicsUnit.Point, 129);
             clueLabel1.Image = Properties.Resources.대사박스5;
-            clueLabel1.Location = new Point(359, 509);
+            clueLabel1.Location = new Point(279, 382);
+            clueLabel1.Margin = new Padding(2, 0, 2, 0);
             clueLabel1.Name = "clueLabel1";
-            clueLabel1.Size = new Size(289, 26);
+            clueLabel1.Size = new Size(239, 21);
             clueLabel1.TabIndex = 2;
             clueLabel1.Text = "가장 유명한 브랜드의 에너지바이다.";
             // 
@@ -105,9 +106,10 @@
             // 
             clueBox1.BackColor = Color.Transparent;
             clueBox1.Image = Properties.Resources.대사박스5_Photoroom;
-            clueBox1.Location = new Point(231, 475);
+            clueBox1.Location = new Point(180, 356);
+            clueBox1.Margin = new Padding(2, 2, 2, 2);
             clueBox1.Name = "clueBox1";
-            clueBox1.Size = new Size(536, 93);
+            clueBox1.Size = new Size(417, 70);
             clueBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             clueBox1.TabIndex = 1;
             clueBox1.TabStop = false;
@@ -116,28 +118,29 @@
             // 
             clue1.BackColor = Color.Transparent;
             clue1.Image = Properties.Resources.주방_에너지바_Photoroom;
-            clue1.Location = new Point(319, 92);
+            clue1.Location = new Point(248, 69);
+            clue1.Margin = new Padding(2, 2, 2, 2);
             clue1.Name = "clue1";
-            clue1.Size = new Size(348, 373);
+            clue1.Size = new Size(271, 280);
             clue1.SizeMode = PictureBoxSizeMode.Zoom;
             clue1.TabIndex = 0;
             clue1.TabStop = false;
             // 
             // viewportPanel
             // 
-            viewportPanel.Location = new Point(-4, -16);
-            viewportPanel.Margin = new Padding(4, 4, 4, 4);
+            viewportPanel.Location = new Point(-3, -12);
             viewportPanel.Name = "viewportPanel";
-            viewportPanel.Size = new Size(937, 633);
+            viewportPanel.Size = new Size(729, 475);
             viewportPanel.TabIndex = 1;
             // 
             // Form2
             // 
-            AutoScaleDimensions = new SizeF(9F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(930, 615);
+            ClientSize = new Size(723, 461);
             Controls.Add(housePanel);
             Controls.Add(viewportPanel);
+            Margin = new Padding(2, 2, 2, 2);
             Name = "Form2";
             Text = "Form2";
             housePanel.ResumeLayout(false);
