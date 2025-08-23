@@ -139,6 +139,9 @@
   <data name="탐정_고민하는모습" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\탐정_고민하는모습.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="기억_21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\기억_21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="인트로_1_문닫혀있는" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\인트로_1_문닫혀있는2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -181,14 +184,32 @@
   <data name="인트로_수첩을받은주인공1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\인트로_수첩을받은주인공1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="기억_61" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\기억_61.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="기억_31" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\기억_31.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="병원탑뷰1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\병원탑뷰.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="인트로_9_수첩건네는 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\인트로_9_수첩건네는 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="앞1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\앞11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="기억_1_수술상담1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\기억_1_수술상담1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="기억_71" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\기억_71.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="주방_에너지바-Photoroom" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\주방_에너지바-Photoroom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="기억_51" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\기억_51.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="대사박스6" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\대사박스6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -220,7 +241,25 @@
   <data name="인트로_9_수첩건네는" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\인트로_9_수첩건네는.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="병원탑뷰1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\병원탑뷰.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="1_병원_컴퓨터_초기화면" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1_병원_컴퓨터_초기화면.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2_병원_진료기록파일" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2_병원_진료기록파일.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2_병원_컴퓨터_인터넷" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2_병원_컴퓨터_인터넷.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3_병원_컴퓨터_검색기록" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3_병원_컴퓨터_검색기록.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4_병원_디곡신_정보" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4_병원_디곡신_정보.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="컴퓨터_카페" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\컴퓨터_카페.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="컴퓨터_카페_채팅목록" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\컴퓨터_카페_채팅목록.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

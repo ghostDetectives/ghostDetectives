@@ -63,6 +63,116 @@ namespace ghostDetectives.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
+        internal static System.Drawing.Bitmap _1_병원_컴퓨터_초기화면 {
+            get {
+                object obj = ResourceManager.GetObject("1_병원_컴퓨터_초기화면", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap _2_병원_진료기록파일 {
+            get {
+                object obj = ResourceManager.GetObject("2_병원_진료기록파일", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap _2_병원_컴퓨터_인터넷 {
+            get {
+                object obj = ResourceManager.GetObject("2_병원_컴퓨터_인터넷", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap _3_병원_컴퓨터_검색기록 {
+            get {
+                object obj = ResourceManager.GetObject("3_병원_컴퓨터_검색기록", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap _4_병원_디곡신_정보 {
+            get {
+                object obj = ResourceManager.GetObject("4_병원_디곡신_정보", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap 기억_1_수술상담1 {
+            get {
+                object obj = ResourceManager.GetObject("기억_1_수술상담1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap 기억_21 {
+            get {
+                object obj = ResourceManager.GetObject("기억_21", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap 기억_31 {
+            get {
+                object obj = ResourceManager.GetObject("기억_31", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap 기억_51 {
+            get {
+                object obj = ResourceManager.GetObject("기억_51", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap 기억_61 {
+            get {
+                object obj = ResourceManager.GetObject("기억_61", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap 기억_71 {
+            get {
+                object obj = ResourceManager.GetObject("기억_71", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
         internal static System.Drawing.Bitmap 대사박스4 {
             get {
                 object obj = ResourceManager.GetObject("대사박스4", resourceCulture);
@@ -356,6 +466,26 @@ namespace ghostDetectives.Properties {
         internal static System.Drawing.Bitmap 집_최종_완 {
             get {
                 object obj = ResourceManager.GetObject("집_최종_완", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap 컴퓨터_카페 {
+            get {
+                object obj = ResourceManager.GetObject("컴퓨터_카페", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap 컴퓨터_카페_채팅목록 {
+            get {
+                object obj = ResourceManager.GetObject("컴퓨터_카페_채팅목록", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

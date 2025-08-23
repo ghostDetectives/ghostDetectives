@@ -2,12 +2,20 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Drawing2D;
+using System.Reflection.Emit;
 using System.Windows.Forms;
+
 
 namespace ghostDetectives
 {
     public partial class Form3 : Form
     {
+        private bool memoryPanelTriggered = false; // 최초 1회 플래그
+        int[] memoryDurations = new int[] { 4000, 1000, 1500, 1500, 4000, 2000 }; // 소리 넣고 그에 맞춰서 시간 조절 필요 *****
+
+
+
+
         // ===== 이동/애니메이션 상태 =====
         private bool walkingUp = false;
         private bool walkingDown = false;
@@ -42,6 +50,25 @@ namespace ghostDetectives
         public Form3()
         {
             InitializeComponent();
+
+            timer1 = new System.Windows.Forms.Timer();
+            timer1.Tick += timer1_Tick;
+
+            memoryPb1.Visible = false;
+            memoryPanel.BackColor = Color.Transparent;
+            memoryPanel.Parent = hospitalPanel;
+            memoryPanel.Visible = true;
+            memoryPanel.BringToFront();
+
+
+            Control[] controlsToHide = { com1, medicalRecords, x1, file1, file2, power, inmunet,inmunet,
+                search, digoxin, cafeBT, inmunetScreen1, searchScreen
+  };
+            foreach (var ctrl in controlsToHide)
+            {
+                ctrl.Visible = false;
+            }
+
 
             // ======== 오브젝트(오버레이 등) 위치 =======
             pictureBox1.Location = new Point(200, 100); // 화면 상의 특정 오브젝트(예: UI/오버레이). 병원 패널 위에 올려놓음.
@@ -121,6 +148,220 @@ namespace ghostDetectives
             pictureBox1.Click += pictureBox1_Click;
 
             UpdateCameraAndLayers();
+        }
+
+        int memoryImageIndex = 0; // 기억 이미지 순서
+        Image[] memoryImages = new Image[]
+        {
+            Properties.Resources.기억_1_수술상담1,
+            Properties.Resources.기억_21,
+            Properties.Resources.기억_31,
+            Properties.Resources.기억_51,
+            Properties.Resources.기억_61,
+            Properties.Resources.기억_71,
+        };
+
+
+        private void ShowMemory()
+        {
+            Control[] controlsToHide = { memoryPanel, pictureBox1, playerBox, com1, inmunet, power, file1, file2 };
+            foreach (var ctrl in controlsToHide)
+            {
+                ctrl.Visible = false;
+            }
+
+
+
+            memoryImageIndex = 0;
+            memoryPb1.Image = memoryImages[memoryImageIndex];
+            memoryPb1.Visible = true;
+            timer1.Start();
+
+        }
+
+        private void CheckCollision()
+        {
+            if (!memoryPanelTriggered && playerBox.Bounds.IntersectsWith(memoryPanel.Bounds))
+            {
+                memoryPanelTriggered = true;
+                ShowMemory();
+            }
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e) // 타이머 ========================================
+        {
+
+            if (memoryImageIndex < memoryImages.Length) // 여주로 바꿔줘야 대사까지 가능***********
+            {
+                memoryPb1.Image = memoryImages[memoryImageIndex];
+                timer1.Interval = memoryDurations[memoryImageIndex]; // 이미지별 간격 적용
+                memoryImageIndex++;
+            }
+            else
+            {
+                timer1.Stop();
+                memoryPb1.Visible = false;
+                playerBox.Visible = true;
+                memoryPanel.Visible = true;
+                pictureBox1.Visible = true;
+            }
+        }
+        private void ShowScreen() // 기본 컴퓨터 화면 보여주기
+        {
+            Control[] controlsToHide = { memoryPanel, pictureBox1, playerBox };
+            foreach (var ctrl in controlsToHide)
+            {
+                ctrl.Visible = false;
+            }
+
+            com1.Parent = this;
+
+            inmunet.BackColor = Color.Transparent;
+            file1.BackColor = Color.Transparent;
+            file2.BackColor = Color.Transparent;
+            power.BackColor = Color.Transparent;
+
+            //inmunet.Location = new Point(67, 625);
+            //file2.Location = new Point(120, 625);
+            //power.Location = new Point(15, 625);
+            //file1.Location = new Point(25, 126); ==> this로 해서 필요없음
+
+            inmunet.Parent = this;
+            file1.Parent = this;
+            file2.Parent = this;
+            power.Parent = this;
+
+            inmunet.Parent = com1;
+            file1.Parent = com1;
+            file2.Parent = com1;
+            power.Parent = com1;
+
+            com1.Visible = true;
+            inmunet.Visible = true;
+            file1.Visible = true;
+            file2.Visible = true;
+            power.Visible = true;
+
+            com1.BringToFront();
+            inmunet.BringToFront();
+            power.BringToFront();
+            file1.BringToFront();
+            file2.BringToFront();
+        }
+        private void pictureBox2_Click(object sender, EventArgs e) // 컴퓨터 클릭시
+        {
+            ShowScreen();
+
+        }
+
+        private void ShowFile() // 파일 보여주기
+        {
+            medicalRecords.Parent = this;
+            medicalRecords.Visible = true;
+            medicalRecords.BringToFront();
+
+            //x1.Location = new Point(697, 35);
+
+
+            x1.BackColor = Color.Transparent;
+            x1.Parent = this;
+            x1.Parent = medicalRecords;
+            x1.Visible = true;
+            x1.BringToFront();
+
+        }
+
+        private void file1_Click(object sender, EventArgs e) // 진료기록
+        {
+            ShowFile();
+        }
+
+        private void file2_Click(object sender, EventArgs e) // 파일 탐색기 클릭
+        {
+            ShowFile();
+
+        }
+
+        private void x1_Click(object sender, EventArgs e)
+        {
+            ShowScreen();
+        }
+
+        private void inmunet_Click(object sender, EventArgs e) // 인터넷 클릭
+        {
+
+            Control[] controlsToHide = { memoryPanel, pictureBox1, playerBox };
+            foreach (var ctrl in controlsToHide)
+            {
+                ctrl.Visible = false;
+            }
+
+            inmunetScreen1.Parent = this; // 배경
+            inmunetScreen1.Visible = true;
+            inmunetScreen1.BringToFront();
+
+            search.BackColor = Color.Transparent;
+            search.Parent = this; // 검색바
+            search.Parent = inmunetScreen1;
+            search.Visible = true;
+            search.BringToFront();
+
+            cafeBT.BackColor = Color.Transparent;
+            cafeBT.Parent = this;
+            cafeBT.Parent = inmunetScreen1;
+            cafeBT.Visible = true;
+            cafeBT.BringToFront();
+        }
+
+        private void search_Click(object sender, EventArgs e) // 검색바 클릭
+        {
+            Control[] controlsToHide = { memoryPanel, pictureBox1, playerBox };
+            foreach (var ctrl in controlsToHide)
+            {
+                ctrl.Visible = false;
+            }
+
+            searchScreen.Parent = this;
+            searchScreen.Visible = true;
+            searchScreen.BringToFront();
+
+            digoxin.BackColor = Color.Transparent;
+            digoxin.Parent = this; // 디곡신 검색어 창
+            digoxin.Visible = true;
+            digoxin.BringToFront();
+
+            cafeBT1.BackColor = Color.Transparent;
+            cafeBT1.Parent = this;
+            cafeBT1.Visible = true;
+            cafeBT1.BringToFront();
+        }
+
+        private void digoxin_Click(object sender, EventArgs e) // 디곡신
+        {
+
+        }
+
+        private void ShowCafe()
+        {
+
+        }
+
+        private void cafeBT_Click(object sender, EventArgs e) // 카페 클릭
+        {
+
+        }
+
+        private void cafeBT1_Click(object sender, EventArgs e) // 카페 클릭
+        {
+
+        }
+
+
+
+        private void power_Click(object sender, EventArgs e) // 전원버튼
+        {
+
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -256,6 +497,8 @@ namespace ghostDetectives
 
             UpdateWalkAnimation();
             UpdateCameraAndLayers();
+
+            CheckCollision(); // ==================================
         }
 
         private void UpdateWalkAnimation()
@@ -364,5 +607,6 @@ namespace ghostDetectives
                 _scaledMap = null;
             }
         }
+
     }
 }
