@@ -404,6 +404,8 @@
             playerBox.Margin = new Padding(4);
             playerBox.Name = "playerBox";
             playerBox.Size = new Size(140, 208);
+            playerBox.Size = new Size(118, 189);
+
             playerBox.TabIndex = 0;
             playerBox.TabStop = false;
             // 
